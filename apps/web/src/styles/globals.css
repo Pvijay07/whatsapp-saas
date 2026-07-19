@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-sans h-screen w-screen overflow-hidden flex font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline font-bold text-on-surface;
+  }
+}
+
+/* Chat bubble styling */
+.bubble-inbound {
+  background-color: #21232a; /* Elite inbound */
+  color: #ffffff;
+  border-bottom-left-radius: 0px;
+}
+
+.bubble-outbound {
+  background-color: #2a2f3a; /* Elite outbound */
+  color: #ffffff;
+  border-bottom-right-radius: 0px;
+}
+
+/* AI Draft suggestion box styling */
+.ai-suggestion-box {
+  background-color: #EEF2FF; /* ai-suggestion */
+  border: 1px dashed rgba(0, 107, 89, 0.3); /* primary/30 */
+  border-left: 3px solid #006b59; /* primary */
+}
+
+/* Active sidebar item left bar */
+.active-nav-indicator {
+  border-left: 3px solid #006b59; /* primary */
+}
+
+/* Sleek custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bccac4; /* outline-variant */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6c7a75; /* outline */
+}
